@@ -24,17 +24,17 @@
         <h2>
           Checking Account
         </h2>
-        <div class="balance">
+        <div class="balance zero">
           <span type="currency-type">
             $ 
           </span>
-          <span class="amount">
+          <span class="balance-amount">
             0
           </span>
         </div>
-        <input id="amount" type="number" placeholder="enter an amount" />
-        <input id="deposit" type="button" value="Deposit" />
-        <input id="withdraw" type="button" value="Withdraw" />
+        <input class="amount-input" type="number" placeholder="enter an amount" />
+        <input class="deposit" type="button" value="Deposit"  />
+        <input class="withdraw" type="button" value="Withdraw" />
       </div>
 
       <!-- Retirement Account Interface -->
@@ -42,23 +42,26 @@
         <h2>
           Retirement Account
         </h2>
-        <div class="balance">
+        <div class="balance zero">
           <span type="currency-type">
             $ 
           </span>
-          <span class="amount">
+          <span class="balance-amount">
             0
           </span>
         </div>
-        <input id="amount" type="number" placeholder="enter an amount" />
-        <input id="deposit" type="button" value="Deposit" />
-        <input id="withdraw" type="button" value="Withdraw" />
+        <input class="amount-input" type="number" placeholder="enter an amount" />
+        <input class="deposit" type="button" value="Deposit" />
+        <input class="withdraw" type="button" value="Withdraw" />
       </div>
       <div class="clear"></div>
     </div>
 
     <!-- Include dependencies -->
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="bank.js"></script>
+    <script src="./js/shim.js"></script>
+    <script src="./js/account.js"></script>
+    <script src="./js/checking.js"></script>
+    <script src="./js/retirement.js"></script>
+    <script src="./js/bank.js"></script>
   </body>
 </html>
