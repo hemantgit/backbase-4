@@ -1,3 +1,41 @@
+
+
+
+
+
+/**
+ * @name Account
+ * @description Base account class which provides prototype for both Checking and Retirement accounts
+ * @constructor
+ *
+ * @param { string } type Specifies type of account (Checking or Retirement)
+ * @param { string } balanceContainer DOM element to update with new balance        
+ * 
+ * @author Sam Reaves
+ * @date April 20th, 2016
+ */
+
+function Account( type, balanceContainer ) {
+
+  /*
+    Base properties
+
+    Balance: $0
+    
+  */
+
+}
+
+
+function Checking( type, balanceContainer, addButton, withdrawButton ) {
+
+}
+
+function Retirement( type, balanceContainer, addButton, withdrawButton ) {
+
+}
+
+
 var balance1 = 0;
 var balance2 = 0;
 
