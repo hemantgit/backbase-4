@@ -20,35 +20,48 @@
       </div>
 
       <!--  Checking Account Interface -->
-      <div class="checking account account-left">
+      <div id="1" class="account account-left">
         <h2>
           Checking Account
         </h2>
-        <div class="balance" id="balance1">
-          $0
+        <div class="balance zero">
+          <span type="currency-type">
+            $ 
+          </span>
+          <span class="balance-amount">
+            0
+          </span>
         </div>
-        <input id="amount1" type="text" placeholder="enter an amount" />
-        <input id="deposit1" type="button" value="Deposit" />
-        <input id="withdraw1" type="button" value="Withdraw" />
+        <input class="amount-input" type="number" placeholder="enter an amount" />
+        <input class="deposit" type="button" value="Deposit"  />
+        <input class="withdraw" type="button" value="Withdraw" />
       </div>
 
       <!-- Retirement Account Interface -->
-      <div class="retirement account account-right">
+      <div id="2" class="account account-right">
         <h2>
           Retirement Account
         </h2>
-        <div class="balance" id="balance2">
-          $0
+        <div class="balance zero">
+          <span type="currency-type">
+            $ 
+          </span>
+          <span class="balance-amount">
+            0
+          </span>
         </div>
-        <input id="amount2" type="text" placeholder="enter an amount" />
-        <input id="deposit2" type="button" value="Deposit" />
-        <input id="withdraw2" type="button" value="Withdraw" />
+        <input class="amount-input" type="number" placeholder="enter an amount" />
+        <input class="deposit" type="button" value="Deposit" />
+        <input class="withdraw" type="button" value="Withdraw" />
       </div>
       <div class="clear"></div>
     </div>
 
     <!-- Include dependencies -->
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="bank.js"></script>
+    <script src="./js/shim.js"></script>
+    <script src="./js/account.js"></script>
+    <script src="./js/checking.js"></script>
+    <script src="./js/retirement.js"></script>
+    <script src="./js/bank.js"></script>
   </body>
 </html>
